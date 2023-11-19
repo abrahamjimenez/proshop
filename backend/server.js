@@ -1,14 +1,23 @@
 import express from "express";
 import dotenv from "dotenv";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 import connectDB from "./config/db.js";
 import {notFound, errorHandler} from "./middleware/errorMiddleware.js";
 import productRoutes from "./routes/productRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 
 const port = process.env.PORT || 5500;
 
 const app = express();
+
+// Body parser middlewre
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
+// Cookie parser middleware
+app.use(cookieParser());
 
 connectDB(); // Connect to MongoDB
 
@@ -17,6 +26,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/products", productRoutes);
+app.use("/api/users", userRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

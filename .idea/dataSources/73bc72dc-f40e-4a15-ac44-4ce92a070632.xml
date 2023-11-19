@@ -4,15 +4,15 @@
     <root id="1">
       <ServerVersion>6.0.11</ServerVersion>
     </root>
-    <schema id="2" parent="1" name="admin"/>
-    <schema id="3" parent="1" name="local"/>
-    <schema id="4" parent="1" name="proshop">
+    <schema id="2" parent="1" name="proshop">
       <Current>1</Current>
       <LocalIntrospectionTimestamp>2023-11-18.20:21:07</LocalIntrospectionTimestamp>
     </schema>
-    <table id="5" parent="4" name="orders"/>
-    <table id="6" parent="4" name="products"/>
-    <table id="7" parent="4" name="users"/>
+    <schema id="3" parent="1" name="admin"/>
+    <schema id="4" parent="1" name="local"/>
+    <table id="5" parent="2" name="orders"/>
+    <table id="6" parent="2" name="products"/>
+    <table id="7" parent="2" name="users"/>
     <column id="8" parent="6" name="_id">
       <DasType>ObjectId|12s</DasType>
       <Position>1</Position>
