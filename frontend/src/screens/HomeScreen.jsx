@@ -5,6 +5,7 @@ import Loader from "../components/Loader";
 import Message from "../components/Message";
 import Paginate from "../components/Paginate";
 import ProductCarousel from "../components/ProductCarousel";
+import Meta from "../components/Meta";
 import {useGetProductsQuery} from "../slices/productsApiSlice";
 
 const HomeScreen = () => {
@@ -21,6 +22,7 @@ const HomeScreen = () => {
                 <Message variant="danger">{error?.data?.message || error.error}</Message>
             ) : (
                 <>
+                    <Meta title="Welcome To ProShop"/>
                     <h1>Latest Products</h1>
                     <Row>
                         {data.products.map((product) => (
