@@ -9,7 +9,7 @@ import {toast} from "react-toastify";
 import {useGetProductsQuery, useCreateProductMutation, useDeleteProductMutation} from "../../slices/productsApiSlice";
 
 const ProductListScreen = () => {
-    const {pageNumber} = useParams()
+    const {pageNumber} = useParams();
 
     const {data, isLoading, error, refetch} = useGetProductsQuery({pageNumber});
 
@@ -56,7 +56,7 @@ const ProductListScreen = () => {
             {loadingCreate && <Loader/>}
             {loadingDelete && <Loader/>}
 
-            {isLoading ? <Loader/> : error ? <Message variant="danger">{error}</Message> : (
+            {isLoading ? <Loader/> : error ? <Message variant="danger">{error.data.message}</Message> : (
                 <>
                     <Table striped bordered hover responsive className="table-sm">
                         <thead>
