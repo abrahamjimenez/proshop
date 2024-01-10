@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="proshop">
-  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.49">
-    <root id="1">
-      <ServerVersion>6.0.11</ServerVersion>
-    </root>
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.51">
+    <root id="1"/>
     <schema id="2" parent="1" name="proshop">
       <Current>1</Current>
-      <LocalIntrospectionTimestamp>2023-11-18.20:21:07</LocalIntrospectionTimestamp>
+      <LastIntrospectionLocalTimestamp>2023-11-18.20:21:07</LastIntrospectionLocalTimestamp>
     </schema>
     <schema id="3" parent="1" name="admin"/>
     <schema id="4" parent="1" name="local"/>

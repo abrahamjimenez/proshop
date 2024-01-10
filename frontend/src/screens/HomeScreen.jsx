@@ -22,7 +22,7 @@ const HomeScreen = () => {
                 <Message variant="danger">{error?.data?.message || error.error}</Message>
             ) : (
                 <>
-                    <Meta title="Welcome To ProShop"/>
+                    <Meta title="Welcome To Abraham's Shop"/>
                     <h1>Latest Products</h1>
                     <Row>
                         {data.products.map((product) => (
