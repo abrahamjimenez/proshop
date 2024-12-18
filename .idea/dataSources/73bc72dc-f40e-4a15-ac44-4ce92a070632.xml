@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="proshop">
-  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.52">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.53">
     <root id="1"/>
     <schema id="2" parent="1" name="proshop">
       <Current>1</Current>
@@ -12,96 +12,96 @@
     <table id="6" parent="2" name="products"/>
     <table id="7" parent="2" name="users"/>
     <column id="8" parent="6" name="_id">
-      <DasType>ObjectId|12s</DasType>
       <Position>1</Position>
+      <StoredType>ObjectId|12s</StoredType>
     </column>
     <column id="9" parent="6" name="__v">
-      <DasType>Int32|4s</DasType>
       <Position>1</Position>
+      <StoredType>Int32|4s</StoredType>
     </column>
     <column id="10" parent="6" name="createdAt">
-      <DasType>ISODate|91s</DasType>
       <Position>1</Position>
+      <StoredType>ISODate|91s</StoredType>
     </column>
     <column id="11" parent="6" name="image">
-      <DasType>String|12s</DasType>
       <Position>1</Position>
+      <StoredType>String|12s</StoredType>
     </column>
     <column id="12" parent="6" name="name">
-      <DasType>String|12s</DasType>
       <Position>1</Position>
+      <StoredType>String|12s</StoredType>
     </column>
     <column id="13" parent="6" name="price">
-      <DasType>Double|8s</DasType>
       <Position>1</Position>
+      <StoredType>Double|8s</StoredType>
     </column>
     <column id="14" parent="6" name="updatedAt">
-      <DasType>ISODate|91s</DasType>
       <Position>1</Position>
+      <StoredType>ISODate|91s</StoredType>
     </column>
     <column id="15" parent="6" name="brand">
-      <DasType>String|12s</DasType>
       <Position>2</Position>
+      <StoredType>String|12s</StoredType>
     </column>
     <column id="16" parent="6" name="description">
-      <DasType>String|12s</DasType>
       <Position>2</Position>
+      <StoredType>String|12s</StoredType>
     </column>
     <column id="17" parent="6" name="numReviews">
-      <DasType>Int32|4s</DasType>
       <Position>2</Position>
+      <StoredType>Int32|4s</StoredType>
     </column>
     <column id="18" parent="6" name="rating">
-      <DasType>Double|8s</DasType>
       <Position>2</Position>
+      <StoredType>Double|8s</StoredType>
     </column>
     <column id="19" parent="6" name="user">
-      <DasType>ObjectId|12s</DasType>
       <Position>2</Position>
+      <StoredType>ObjectId|12s</StoredType>
     </column>
     <column id="20" parent="6" name="category">
-      <DasType>String|12s</DasType>
       <Position>3</Position>
+      <StoredType>String|12s</StoredType>
     </column>
     <column id="21" parent="6" name="reviews">
-      <DasType>list|4999545s</DasType>
       <Position>3</Position>
+      <StoredType>list|4999545s</StoredType>
     </column>
     <column id="22" parent="6" name="countInStock">
-      <DasType>Int32|4s</DasType>
       <Position>4</Position>
+      <StoredType>Int32|4s</StoredType>
     </column>
     <column id="23" parent="7" name="_id">
-      <DasType>ObjectId|12s</DasType>
       <Position>1</Position>
+      <StoredType>ObjectId|12s</StoredType>
     </column>
     <column id="24" parent="7" name="createdAt">
-      <DasType>ISODate|91s</DasType>
       <Position>1</Position>
+      <StoredType>ISODate|91s</StoredType>
     </column>
     <column id="25" parent="7" name="email">
-      <DasType>String|12s</DasType>
       <Position>1</Position>
+      <StoredType>String|12s</StoredType>
     </column>
     <column id="26" parent="7" name="isAdmin">
-      <DasType>Boolean|12s</DasType>
       <Position>1</Position>
+      <StoredType>Boolean|12s</StoredType>
     </column>
     <column id="27" parent="7" name="password">
-      <DasType>String|12s</DasType>
       <Position>1</Position>
+      <StoredType>String|12s</StoredType>
     </column>
     <column id="28" parent="7" name="updatedAt">
-      <DasType>ISODate|91s</DasType>
       <Position>1</Position>
+      <StoredType>ISODate|91s</StoredType>
     </column>
     <column id="29" parent="7" name="__v">
-      <DasType>Int32|4s</DasType>
       <Position>2</Position>
+      <StoredType>Int32|4s</StoredType>
     </column>
     <column id="30" parent="7" name="name">
-      <DasType>String|12s</DasType>
       <Position>2</Position>
+      <StoredType>String|12s</StoredType>
     </column>
   </database-model>
 </dataSource>
